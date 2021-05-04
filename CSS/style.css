@@ -1,6 +1,6 @@
 :root {
     --dark-blue: #222222;
-    --pink: #F1E4E6;
+    --pink: #F1E4E6; 
     --dark-pink: #F16D7F;
     --brown: #474040;
     --light-gray: #9F9F9F;
@@ -23,6 +23,7 @@ body {
 
 .header {
     background-color: var(--dark-blue);
+    position: relative;
 }
 
 .header__wrapper {
@@ -38,6 +39,44 @@ body {
 
 .header__navigation {
     display: none;
+    position: absolute;
+    width: 232px;
+    height: 764px;
+    background-color: #FFFFFF;
+    right: 0;
+    padding: 37px 34px;
+    box-sizing: border-box;
+    margin: 22px 0 0;
+}
+
+.menu-title-size {
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.header__navigation-menu {
+    margin: 24px 0;
+}
+
+.title-margin {
+    margin: 20px 0 0;
+}
+
+.header__navigation-title {
+    color: var(--dark-pink);
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.header__navigation-list {
+    text-decoration: none;
+    margin: 0 0 12px 0;
+    color: var(--dark-gray);
+}
+
+.list-margin {
+    margin: 12px 0 0 22px;
 }
 
 .header__button {
@@ -46,8 +85,37 @@ body {
     margin: 0 34px 0 0;
 }
 
+.header__button:hover +.header__navigation,
+.header__button:focus +.header__navigation {
+    display: block;
+}
+
+/* затемнение блока сделать как-нибудь */
+/* .header__button:hover + main>.brand {
+    opacity: 0.5;
+} */
+
+.header__navigation:hover {
+    display: block;
+}
+
 .header__person-link {
     margin: 0 34px 0 0;
+}
+
+.header__basket {
+    position: relative;
+}
+
+.header__basket:before {
+    content: '';
+    position: absolute;
+    width: 19px;
+    height: 19px;
+    background-image: url(../img/header/items.svg);
+    background-size: 19px 19px;
+    right: -9px;
+    top: -18px;
 }
 
 .brand {
@@ -56,11 +124,21 @@ body {
 }
 
 .brand__title {
+    position: relative;
     font-size: 48px;
     font-style: normal;
     font-weight: 900;
     line-height: 58px;
     text-transform: uppercase;
+}
+
+.brand__title:before {
+    content: '';
+    position: absolute;
+    background-color: var(--dark-pink);
+    width: 12px;
+    height: 92px;
+    left: -28px;
 }
 
 .brand__title-wrapper {
@@ -77,13 +155,6 @@ body {
     font-weight: 700;
     line-height: 44px;
     text-align: left;
-}
-
-.brand__rectangle {
-    background-color: var(--dark-pink);
-    width: 12px;
-    min-height: 92px;
-    margin: 0 16px 0 0;
 }
 
 .brand__subtitle-pink {
@@ -182,29 +253,37 @@ body {
     width: 360px;
     height: 581px;
     margin:0 0 30px;
+    position: relative;
 }
 
-.card_title {
+/* кнопка не залезает в блок .products__card */
+
+.card-button {
+    /* display: none; */
+    position: absolute;
+}
+
+.products__card:hover +.products__card>.card-button {
+    display: block;
+}
+
+.card-title {
     text-transform: uppercase;
     font-size: 13px;
     margin: 24px 0 13px 18px;
 }
 
-.card_subtitle {
+.card-subtitle {
     color: var(--dark-gray);
     font-weight: 300;
     line-height: 17px;
     margin: 0 0 18px 17px;
 }
 
-.card_price {
+.card-price {
     color: var(--dark-pink);
     margin: 0 0 18px 17px;
 
-}
-
-.card_button {
-    display: none;
 }
 
 .products__button {
@@ -250,7 +329,7 @@ body {
 
 .footer-top {
     background-image: url(../img/footer/footer_back.jpg);
-    /* прозрачность */
+    background-size: cover;
     height: 448px;
     display: flex;
     justify-content: space-around;
@@ -276,4 +355,79 @@ body {
     margin: 150px 0 0;
     text-align: center;
     text-transform: uppercase;
+}
+
+.input {
+border-top-left-radius: 50px;
+border-bottom-left-radius: 50px;
+height: 49px;
+width: 256px;
+background-color: #E1E1E1;
+border: none;
+position: relative;
+}
+
+::-webkit-input-placeholder {
+    position: absolute;
+    margin: 17px 23px;
+}
+
+.form__button {
+border-top-right-radius: 50px;
+border-bottom-right-radius: 50px;
+border: none;
+background-color: var(--dark-pink);
+color: white;
+width: 100px;
+}
+
+form {
+    display: flex;
+    margin: 32px auto;
+}
+
+.subscribe {
+    font-size: 24px;
+    line-height: 40px;
+}
+
+.promotion {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.bottom {
+    background-color: #222224;
+    color: white;
+}
+
+.bottom__wrap {
+    display: flex;
+    height: 79px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bottom__wrap-contacts {
+    display: flex;
+    width: 148px;
+}
+
+.reg-title {
+    background-color: #F8F3F4;
+    height: 149px;
+    text-transform: uppercase;
+    color: var(--dark-pink);
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+}
+
+.registration {
+    display: flex;
+}
+
+.reg-form__items {
+    display: flex;
+    flex-direction: column;
 }
