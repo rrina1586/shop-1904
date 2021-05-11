@@ -1,0 +1,96 @@
+.header {
+    background-color: $dark-blue;
+    position: relative;
+
+    &__wrapper {
+        min-height: 75px;
+        @include flex-center-space-between ();
+    }
+    
+    &__logo {
+        margin: 0 41px 0 0;
+        // @extend %margin-r-45; работает тоже
+    }
+    
+    &__navigation {
+        display: none;
+        position: absolute;
+        width: 232px;
+        height: 764px;
+        background-color: #FFFFFF;
+        right: 0;
+        padding: 37px 34px;
+        box-sizing: border-box;
+        margin: 22px 0 0;
+    }
+    
+    .menu-title-size {
+        text-transform: uppercase;
+        font-size: 14px;
+    }
+    
+    &__navigation-menu {
+        margin: 24px 0;
+    }
+    
+    .title-margin {
+        margin: 20px 0 0;
+    }
+    
+    .header__navigation-title {
+        color: $dark-pink;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-size: 14px;
+    }
+    
+    .header__navigation-list {
+        text-decoration: none;
+        margin: 0 0 12px 0;
+        color: $dark-gray;
+    }
+    
+    .list-margin {
+        margin: 12px 0 0 22px;
+    }
+    
+    .header__button {
+        background-color: transparent;
+        border: none;
+        margin: 0 34px 0 0;
+    }
+    
+    .header__button:hover +.header__navigation,
+    .header__button:focus +.header__navigation {
+        display: block;
+    }
+    
+    /* затемнение блока сделать как-нибудь */
+    /* .header__button:hover + main>.brand {
+        opacity: 0.5;
+    } */
+    
+    .header__navigation:hover {
+        display: block;
+    }
+    
+    .header__person-link {
+        margin: 0 34px 0 0;
+    }
+    
+    .header__basket {
+        position: relative;
+    }
+    
+    .header__basket:before {
+        content: '';
+        position: absolute;
+        width: 19px;
+        height: 19px;
+        background-image: url(../img/header/items.svg);
+        background-size: 19px 19px;
+        right: -9px;
+        top: -18px;
+    }
+}
+

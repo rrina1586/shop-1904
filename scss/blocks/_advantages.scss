@@ -1,0 +1,25 @@
+.advantages-block {
+    background-color: #222224;
+}
+
+.advantages {
+    @include flex-center-space-between ();
+    height: 341px;
+
+    .advantages__card {
+        width: 360px;
+        text-align: center;
+    }
+    
+    .advantages-title {
+        color: #FBFBFB;
+        margin: 28px 0 16px;
+        @include font(20px, 24px);
+    }
+    
+    .advantages-subtitle {
+        color: #FBFBFB;
+        @include font(14px, 19px, 300);
+    }
+}
+

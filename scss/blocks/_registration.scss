@@ -1,0 +1,17 @@
+.reg-title {
+    @include font(24px, 149px);
+    background-color: #F8F3F4;
+    text-transform: uppercase;
+    color: $dark-pink;
+    display: flex;
+    align-items: center;
+}
+
+.registration {
+    display: flex;
+}
+
+.reg-form__items {
+    display: flex;
+    flex-direction: column;
+}

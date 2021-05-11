@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shop</title>
-    <link rel="stylesheet" href="CSS/reset.css">
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
@@ -251,7 +250,8 @@
                 <h2 class="subscribe">subscribe</h2>
                 <h3 class="promotion">for our newletter and promotion</h3>
                 <form action="endpoint">
-                    <input type="text" placeholder="Enter Your Email" class="input" required>
+                    <label for="email" class="visually-hidden">Enter Your Email</label>
+                    <input type="text" id="email" placeholder="Enter Your Email" class="input" required>
                     <button type="submit" class="form__button">Subscribe</button>
                 </form>
             </div>

@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration</title>
-    <link rel="stylesheet" href="CSS/reset.css">
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
@@ -106,15 +105,19 @@
             <div class="reg-form">
                 <form action="endpoint" class="reg-form__items">
                     <h5>Your Name</h5>
-                    <input type="text" placeholder="First Name">
-                    <input type="text" placeholder="Last Name">
+                    <label for="first-name" class="visually-hidden">First Name</label>
+                    <input type="text" id="first-name" placeholder="First Name" required>
+                    <label for="last-name" class="visually-hidden">Last Name</label>
+                    <input type="text" id="last-name" placeholder="Last Name" required>
                     <div class="gender">
-                        <input type="radio">Male
-                        <input type="radio">Female
+                        <label for="male" class="visually-hidden">Male</label>
+                        <input type="radio" id="male" name="gender">Male
+                        <label for="female" class="visually-hidden">Female</label>
+                        <input type="radio" id="female" name="gender">Female
                     </div>
                     <h5>Login details</h5>
-                    <input type="email" placeholder="Email">
-                    <input type="password" placeholder="Password">
+                    <input type="email" placeholder="Email" required>
+                    <input type="password" placeholder="Password" required>
                     <p>Please use 8 or more characters, with at least 1 number and a mixture of uppercase and lowercase
                         letters</p>
                     <button type="submit">join now</button>
@@ -147,7 +150,8 @@
                 <h2 class="subscribe">subscribe</h2>
                 <h3 class="promotion">for our newletter and promotion</h3>
                 <form action="endpoint">
-                    <input type="text" placeholder="Enter Your Email" class="input" required>
+                    <label for="email" class="visually-hidden">Enter Your Email</label>
+                    <input type="text" id="email" placeholder="Enter Your Email" class="input" required>
                     <button type="submit" class="form__button">Subscribe</button>
                 </form>
             </div>

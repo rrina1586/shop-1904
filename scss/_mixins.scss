@@ -1,0 +1,23 @@
+@mixin flex-center-space-between () {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@mixin flex-center () {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin font($size: 16px, $height: 19px, $weight: 400, $style: normal) {
+    font-size: $size;
+    line-height: $height;
+    font-weight: $weight;
+    font-style: $style;
+}
+
+@mixin block-size($width, $height) {
+    width: $width;
+    height: $height;
+}
