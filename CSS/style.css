@@ -102,49 +102,6 @@ body {
   margin: 0 41px 0 0;
 }
 
-.header__navigation {
-  display: none;
-  position: absolute;
-  width: 232px;
-  height: 764px;
-  background-color: #FFFFFF;
-  right: 0;
-  padding: 37px 34px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  margin: 22px 0 0;
-}
-
-.header .menu-title-size {
-  text-transform: uppercase;
-  font-size: 14px;
-}
-
-.header__navigation-menu {
-  margin: 24px 0;
-}
-
-.header .title-margin {
-  margin: 20px 0 0;
-}
-
-.header .header__navigation-title {
-  color: #F16D7F;
-  text-transform: uppercase;
-  text-decoration: none;
-  font-size: 14px;
-}
-
-.header .header__navigation-list {
-  text-decoration: none;
-  margin: 0 0 12px 0;
-  color: #5D5D5D;
-}
-
-.header .list-margin {
-  margin: 12px 0 0 22px;
-}
-
 .header .header__button {
   background-color: transparent;
   border: none;
@@ -177,6 +134,49 @@ body {
   background-size: 19px 19px;
   right: -9px;
   top: -18px;
+}
+
+.header__navigation {
+  display: none;
+  width: 232px;
+  height: 764px;
+  position: absolute;
+  background-color: #FFFFFF;
+  right: 0;
+  padding: 37px 34px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 22px 0 0;
+}
+
+.header__navigation .menu-title-size {
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.header__navigation .header__navigation-menu {
+  margin: 24px 0;
+}
+
+.header__navigation .title-margin {
+  margin: 20px 0 0;
+}
+
+.header__navigation .header__navigation-title {
+  color: #F16D7F;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.header__navigation .header__navigation-list {
+  text-decoration: none;
+  margin: 0 0 12px 0;
+  color: #5D5D5D;
+}
+
+.header__navigation .list-margin {
+  margin: 12px 0 0 22px;
 }
 
 .brand {
@@ -374,11 +374,11 @@ body {
   color: #F16D7F;
 }
 
-.advantages-block {
+.advantages {
   background-color: #222224;
 }
 
-.advantages {
+.advantages .advantages-block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

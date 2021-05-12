@@ -1,11 +1,11 @@
-.advantages-block {
-    background-color: #222224;
-}
-
 .advantages {
-    @include flex-center-space-between ();
-    height: 341px;
+    background-color: $black;
 
+    .advantages-block {
+        @include flex-center-space-between ();
+        height: 341px;
+    }
+    
     .advantages__card {
         width: 360px;
         text-align: center;
@@ -22,4 +22,6 @@
         @include font(14px, 19px, 300);
     }
 }
+
+
 
