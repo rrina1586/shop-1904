@@ -11,7 +11,7 @@
         margin: 0 41px 0 0;
         // @extend %margin-r-45; работает тоже
     }
-       
+
     .header__button {
         background-color: transparent;
         border: none;
@@ -52,3 +52,38 @@
     }
 }
 
+@media (max-width: $max-tablet-width) {
+    .header {
+        &__logo {
+            margin: 0 41px 0 16px;
+        }
+
+        .header__button {
+            margin: 0 25px 0 0;
+        }
+
+        .header__person-link {
+            margin: 0 25px 0 0;
+        }
+    }
+}
+
+@media (max-width: $max-mobile-width) {
+    .header {
+        &__logo {
+            margin: 0 41px 0 0px;
+        }
+
+        .header__button {
+            margin: 0;
+        }
+
+        .header__person-link {
+            display: none;
+        }
+
+        .header__basket {
+            display: none;
+        }
+    }
+}

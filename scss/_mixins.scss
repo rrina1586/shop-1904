@@ -21,3 +21,15 @@
     width: $width;
     height: $height;
 }
+
+@mixin tablet {
+    @media (max-width: $max-tablet-width) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media (max-width: $max-mobile-width) {
+        @content;
+    }
+}

@@ -8,10 +8,22 @@
     .offers__item {
         color: white;
         background-color: $brown;
-        width: 360px;
+        background-size: cover;
+        width: 32%;
         min-height: 260px;
         margin: 0 0 30px;
         @include flex-center();
+
+        @include tablet {
+            min-height: 168px;
+            margin: 0 0 20px;
+        }
+
+        @include mobile {
+            width: 100%;
+            min-height: 258px;
+            margin: 0 0 32px;
+        }
 
         &--women {
             background-image: url(../img/offers/for_women.jpg);
@@ -30,6 +42,14 @@
             width: 100%;
             margin: 0;
             min-height: 180px;
+
+            @include tablet {
+                min-height: 116px;
+            }
+
+            @include mobile {
+                min-height: 111px;
+            }
         }
     }
     
@@ -49,4 +69,6 @@
         text-align: center;
     }
 }
+
+
 

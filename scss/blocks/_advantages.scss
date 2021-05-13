@@ -4,6 +4,12 @@
     .advantages-block {
         @include flex-center-space-between ();
         height: 341px;
+
+        @include tablet {
+            flex-direction: column;
+            min-height: 610px;
+            justify-content: space-around;
+        }
     }
     
     .advantages__card {

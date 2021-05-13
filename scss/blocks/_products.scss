@@ -1,6 +1,14 @@
 .products {
     margin-top: 97px;
 
+    @include tablet {
+        margin-top: 155px;
+    }
+
+    @include mobile {
+        width: 96%;
+    }
+
     .products__title {
         color: $dark-blue;
         @include font(30px, 19px, 400);
@@ -12,12 +20,25 @@
         color: $light-gray;
         font-size: 14px;
         text-align: center;
+
+        @include tablet {
+            margin: 3px 0 73px;
+        }
     }
     
     .products__cards {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+
+        @include tablet {
+            // не знаю, как сделать этот блок резиновым
+            width: 735px;
+        }
+
+        @include mobile {
+            width: 359px;
+        }
     }
     
     .products__card {
@@ -25,6 +46,10 @@
         @include block-size (360px, 581px);
         margin:0 0 30px;
         position: relative;
+
+        @include tablet {
+            margin:0 0 17px;
+        }
     }
     
     /* кнопка не залезает в блок .products__card */
@@ -64,6 +89,16 @@
         border: 1px solid #FF6A6A;
         background-color: white;
         color: $dark-pink;
+
+        @include tablet {
+            left: 36%;
+            margin: 16px 0 65px;
+        }
+
+        @include mobile {
+            left: 22%;
+            margin: 24px 0 97px;
+        }
     }
 }
 

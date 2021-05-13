@@ -4,12 +4,27 @@
     height: 448px;
     display: flex;
     justify-content: space-around;
+
+    @include tablet {
+        flex-direction: column;
+        min-height: 693px;
+        display: flex;
+        align-items: center;
+    }
+
+    @include mobile {
+        min-height: 550px;
+    }
 }
     
 .face {
     width: 360px;
     margin: 87px 0 0;
     text-align: center;
+
+    @include tablet {
+        margin: 54px 0 0;
+    }
 }
     
 .face__text {
@@ -25,6 +40,10 @@
     margin: 150px 0 0;
     text-align: center;
     text-transform: uppercase;
+
+    @include tablet {
+        margin: 48px 0 108px;
+    }
 }
     
 .input {
@@ -71,9 +90,20 @@ form {
 .bottom__wrap {
     @include flex-center-space-between ();
     height: 79px;
+
+    @include mobile {
+        min-height: 143px;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
 }
     
 .bottom__wrap-contacts {
     display: flex;
     width: 148px;
+
+    @include mobile {
+        flex-direction: row;
+        min-height: 32px;
+    }
 }
