@@ -44,6 +44,49 @@
                                 fill="#E8E8E8" />
                         </svg>
                     </button>
+                    <nav class="header__navigation">
+                        <h2 class="menu-title-size">menu</h2>
+                        <ul class="header__navigation-menu">
+                            <li class="title-margin">
+                                <a href="#" class="header__navigation-title">man</a>
+                                <ul>
+                                    <li class="list-margin"><a class="header__navigation-list" href="#">Accessories</a>
+                                    </li>
+                                    <li class="list-margin"><a class="header__navigation-list" href="#">Bags</a></li>
+                                    <li class="list-margin"><a class="header__navigation-list" href="#">Denim</a></li>
+                                    <li class="list-margin"><a class="header__navigation-list" href="#">T-Shirts</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="title-margin">
+                                <a href="#" class="header__navigation-title">woman</a>
+                                <ul>
+                                    <li class="list-margin"><a class="header__navigation-list" href="#">Accessories</a>
+                                    </li>
+                                    <li class="list-margin"><a class="header__navigation-list" href="#">Jackets &
+                                            Coats</a></li>
+                                    <li class="list-margin"><a class="header__navigation-list" href="#">Polos</a></li>
+                                    <li class="list-margin"><a class="header__navigation-list" href="#">T-Shirts</a>
+                                    </li>
+                                    <li class="list-margin"><a class="header__navigation-list" href="#">Shirts</a></li>
+                                </ul>
+                            </li>
+                            <li class="title-margin">
+                                <a href="#" class="header__navigation-title">kids</a>
+                                <ul>
+                                    <li class="list-margin"><a class="header__navigation-list" href="#">Accessories</a>
+                                    </li>
+                                    <li class="list-margin"><a class="header__navigation-list" href="#">Jackets &
+                                            Coats</a></li>
+                                    <li class="list-margin"><a class="header__navigation-list" href="#">Polos</a></li>
+                                    <li class="list-margin"><a class="header__navigation-list" href="#">T-Shirts</a>
+                                    </li>
+                                    <li class="list-margin"><a class="header__navigation-list" href="#">Shirts</a></li>
+                                    <li class="list-margin"><a class="header__navigation-list" href="#">Bags</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
                     <a class="header__person-link" href="registration.html" target="_blank">
                         <svg width="29" height="29" viewBox="0 0 29 29" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -61,41 +104,6 @@
                 </div>
             </div>
         </div>
-        <nav class="header__navigation">
-            <h2>menu</h2>
-            <ul>
-                <li>
-                    <a href="#">man</a>
-                    <ul>
-                        <li><a href="#">Accessories</a></li>
-                        <li><a href="#">Bags</a></li>
-                        <li><a href="#">Denim</a></li>
-                        <li><a href="#">T-Shirts</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">woman</a>
-                    <ul>
-                        <li><a href="#">Accessories</a></li>
-                        <li><a href="#">Jackets & Coats</a></li>
-                        <li><a href="#">Polos</a></li>
-                        <li><a href="#">T-Shirts</a></li>
-                        <li><a href="#">Shirts</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">kids</a>
-                    <ul>
-                        <li><a href="#">Accessories</a></li>
-                        <li><a href="#">Jackets & Coats</a></li>
-                        <li><a href="#">Polos</a></li>
-                        <li><a href="#">T-Shirts</a></li>
-                        <li><a href="#">Shirts</a></li>
-                        <li><a href="#">Bags</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
     </header>
     <main>
         <div class="reg-title">
@@ -104,36 +112,38 @@
         <section class="registration container">
             <div class="reg-form">
                 <form action="endpoint" class="reg-form__items">
-                    <h5>Your Name</h5>
+                    <h5 class="user-title">Your Name</h5>
                     <label for="first-name" class="visually-hidden">First Name</label>
-                    <input type="text" id="first-name" placeholder="First Name" required>
+                    <input type="text" id="first-name" class="user-info" placeholder="First Name" required>
                     <label for="last-name" class="visually-hidden">Last Name</label>
-                    <input type="text" id="last-name" placeholder="Last Name" required>
+                    <input type="text" id="last-name" class="user-info" placeholder="Last Name" required>
                     <div class="gender">
                         <label for="male" class="visually-hidden">Male</label>
                         <input type="radio" id="male" name="gender">Male
                         <label for="female" class="visually-hidden">Female</label>
                         <input type="radio" id="female" name="gender">Female
                     </div>
-                    <h5>Login details</h5>
-                    <input type="email" placeholder="Email" required>
-                    <input type="password" placeholder="Password" required>
-                    <p>Please use 8 or more characters, with at least 1 number and a mixture of uppercase and lowercase
+                    <h5 class="user-title">Login details</h5>
+                    <input type="email" class="user-info" placeholder="Email" required>
+                    <input type="password" class="user-info" placeholder="Password" required>
+                    <p class="password-help">Please use 8 or more characters, with at least 1 number and a mixture of
+                        uppercase and lowercase
                         letters</p>
-                    <button type="submit">join now</button>
+                    <button type="submit" class="reg-btn">join now</button>
                 </form>
             </div>
             <div class="reg-loyalty">
-                <h3>loyalty has its perks</h3>
-                <h3>Get in on the loyalty program where you can earn points and unlock serious perks. Starting with
+                <h3 class="reg-loyalty__title">loyalty has its perks</h3>
+                <h3 class="reg-loyalty__subtitle">Get in on the loyalty program where you can earn points
+                    and unlock serious perks. Starting with
                     these as
                     soon as you join:</h3>
-                <ul>
-                    <li>15% off welcome offer</li>
-                    <li>Free shipping, returns and exchanges on all orders</li>
-                    <li>$10 off a purchase on your birthday</li>
-                    <li>Early access to products</li>
-                    <li>Exclusive offers & rewards</li>
+                <ul class="list-styles">
+                    <li class="list-styles__li">15% off welcome offer</li>
+                    <li class="list-styles__li">Free shipping, returns and exchanges on all orders</li>
+                    <li class="list-styles__li">$10 off a purchase on your birthday</li>
+                    <li class="list-styles__li">Early access to products</li>
+                    <li class="list-styles__li">Exclusive offers & rewards</li>
                 </ul>
             </div>
         </section>
@@ -149,7 +159,7 @@
             <div class="form">
                 <h2 class="subscribe">subscribe</h2>
                 <h3 class="promotion">for our newletter and promotion</h3>
-                <form action="endpoint">
+                <form class="sub-input" action="endpoint">
                     <label for="email" class="visually-hidden">Enter Your Email</label>
                     <input type="text" id="email" placeholder="Enter Your Email" class="input" required>
                     <button type="submit" class="form__button">Subscribe</button>
