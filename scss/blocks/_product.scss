@@ -131,9 +131,12 @@
 
     &__btn {
         @include block-size(211px, 47px);
-        border: 1px solid #FF6A6A;
-        margin: 49px 0 0;        
+        border: 1px solid #FF6A6A;      
         padding: 13px 0 0 23px;
+        position: absolute;
+        top: 85%;
+        left: 50%;
+        transform: translate(-50%, -50%);
 
         &__link {
             text-decoration: none;

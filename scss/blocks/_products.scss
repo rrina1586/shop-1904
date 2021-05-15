@@ -83,8 +83,9 @@
     
     .products__button {
         @include block-size(211px, 47px);
-        position: relative;
-        left: 42%;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
         margin: 19px 0 96px;
         border: 1px solid #FF6A6A;
         background-color: white;
@@ -100,5 +101,9 @@
             margin: 24px 0 97px;
         }
     }
+}
+
+.margin-bottom-161 {
+    margin-bottom: 161px;
 }
 

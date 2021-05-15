@@ -1,0 +1,55 @@
+.cart {
+    &__item {
+        display: flex;
+        box-shadow: 25px 25px 150px -20px gray;
+        @include block-size(652px, 306px);
+        margin: 0 129px 40px 0;
+        position: relative;
+
+        &__close {
+            position: absolute;
+            top: 28px;
+            right: 22px;
+            // цвет
+        }
+
+        &__info {
+            margin: 22px 0 0 31px;
+
+            &__title {
+                text-transform: uppercase;
+                @include font(24px, 29px, 400);
+                margin: 0 0 42px;
+            }
+
+            &__text {
+                @include font(22px, 26px, 400);
+                margin-bottom: 6px;
+                color: #575757;
+
+                &__price {
+                    color: $dark-pink;
+                }
+            }
+        }
+    }
+
+    &__img {
+        @include block-size(262px, 306px);
+    }
+
+    .quantity-wrap {
+        display: flex;
+
+        &__quantity {
+            @include block-size(44px, 25px);
+            border: 1px solid #EAEAEA;
+            margin: 0 0 0 24px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #656565;
+            @include font(18px, 22px, 400);
+        }
+    }
+}
