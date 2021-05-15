@@ -1,0 +1,16 @@
+.title-links {
+    display: flex;
+    align-items: center;
+
+    &__link {
+        text-decoration: none;
+        @include font(14px, 19px, 300);
+        color: #636363;
+
+        &__new {
+            @include font(14px, 19px, 700);
+            text-decoration: none;
+            color: $dark-pink;
+        }
+    }
+}
